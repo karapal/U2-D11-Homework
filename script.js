@@ -1,12 +1,4 @@
-const options = {
-    method: "GET",
-    headers: {
-        'X-RapidAPI-Key': 'f1cc7fec96mshd251ff6548fe9a8p19f7b0jsn649cf6124a1f',
-        'X-RapidAPI-Host': 'deezerdevs-deezer.p.rapidapi.com'
-  }
-};
-
-  const getList = () => {
+ const getList = () => {
     fetch("https://striveschool-api.herokuapp.com/api/deezer/search?q=metallica") 
       .then((rawAlbum) => rawAlbum.json()) 
       .then((jsonAlbum) => {
